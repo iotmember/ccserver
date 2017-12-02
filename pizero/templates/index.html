@@ -1,0 +1,19 @@
+{% extends "basic.html" %}
+
+{% block content %}
+<h1>Home page: Demo with Pizero and PoisonTap</h1>
+<p>Welcome to <em>MyDemo</em>, no name, 010100101010101001010000000000000101001010100101001010100010101010</p>
+
+<div>
+{% load static %}
+<img src="{% static "images/pizero.jpg" %}" alt="My Pizero board"/>
+</div>
+
+<h2>Dynamic content</h2>
+
+  <p>Site counts:</p>
+  <ul>
+    <li><strong>Sites:</strong> {{ num_sites }}</li>
+  </ul>
+
+{% endblock %}
